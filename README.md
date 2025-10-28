@@ -1,11 +1,27 @@
-# Loja CRUD (FastAPI + SQLite + React)
+# Sistema de Agendamento
 
-## Backend
-- `uvicorn backend.server:app --reload`
-- Banco: `sqlite:///./loja.db`
-- Endpoints: `/categorias`, `/produtos`
+## Como Rodar
 
-## Frontend
-- `cd frontend && npm install && npm run dev`
-- Vite em `http://127.0.0.1:5173`
-- Configure `VITE_API_URL` no `.env` do frontend se quiser trocar a URL da API.
+### Backend (FastAPI)
+1. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Execute o servidor:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+### Frontend (React)
+1. Navegue até a pasta do frontend:
+   ```bash
+   cd frontend
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
